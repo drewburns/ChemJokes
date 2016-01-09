@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		517EECB21C418D0D00AA6C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECB11C418D0D00AA6C34 /* AppDelegate.swift */; };
+		517EECB41C418D0D00AA6C34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECB31C418D0D00AA6C34 /* ViewController.swift */; };
+		517EECB71C418D0D00AA6C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517EECB51C418D0D00AA6C34 /* Main.storyboard */; };
+		517EECBA1C418D0D00AA6C34 /* ChemJokes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 517EECB81C418D0D00AA6C34 /* ChemJokes.xcdatamodeld */; };
+		517EECBC1C418D0D00AA6C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517EECBB1C418D0D00AA6C34 /* Assets.xcassets */; };
+		517EECBF1C418D0D00AA6C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517EECBD1C418D0D00AA6C34 /* LaunchScreen.storyboard */; };
+		517EECCA1C418D0D00AA6C34 /* ChemJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECC91C418D0D00AA6C34 /* ChemJokesTests.swift */; };
+		517EECD51C418D0D00AA6C34 /* ChemJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECD41C418D0D00AA6C34 /* ChemJokesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		517EECC61C418D0D00AA6C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517EECA61C418D0D00AA6C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 517EECAD1C418D0D00AA6C34;
+			remoteInfo = ChemJokes;
+		};
+		517EECD11C418D0D00AA6C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517EECA61C418D0D00AA6C34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 517EECAD1C418D0D00AA6C34;
+			remoteInfo = ChemJokes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		517EECAE1C418D0D00AA6C34 /* ChemJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		517EECB11C418D0D00AA6C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		517EECB31C418D0D00AA6C34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		517EECB61C418D0D00AA6C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		517EECB91C418D0D00AA6C34 /* ChemJokes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChemJokes.xcdatamodel; sourceTree = "<group>"; };
+		517EECBB1C418D0D00AA6C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		517EECBE1C418D0D00AA6C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		517EECC01C418D0D00AA6C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517EECC51C418D0D00AA6C34 /* ChemJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		517EECC91C418D0D00AA6C34 /* ChemJokesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemJokesTests.swift; sourceTree = "<group>"; };
+		517EECCB1C418D0D00AA6C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517EECD01C418D0D00AA6C34 /* ChemJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		517EECD41C418D0D00AA6C34 /* ChemJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemJokesUITests.swift; sourceTree = "<group>"; };
+		517EECD61C418D0D00AA6C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		517EECAB1C418D0D00AA6C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECC21C418D0D00AA6C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECCD1C418D0D00AA6C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		517EECA51C418D0D00AA6C34 = {
+			isa = PBXGroup;
+			children = (
+				517EECB01C418D0D00AA6C34 /* ChemJokes */,
+				517EECC81C418D0D00AA6C34 /* ChemJokesTests */,
+				517EECD31C418D0D00AA6C34 /* ChemJokesUITests */,
+				517EECAF1C418D0D00AA6C34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		517EECAF1C418D0D00AA6C34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				517EECAE1C418D0D00AA6C34 /* ChemJokes.app */,
+				517EECC51C418D0D00AA6C34 /* ChemJokesTests.xctest */,
+				517EECD01C418D0D00AA6C34 /* ChemJokesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		517EECB01C418D0D00AA6C34 /* ChemJokes */ = {
+			isa = PBXGroup;
+			children = (
+				517EECB11C418D0D00AA6C34 /* AppDelegate.swift */,
+				517EECB31C418D0D00AA6C34 /* ViewController.swift */,
+				517EECB51C418D0D00AA6C34 /* Main.storyboard */,
+				517EECBB1C418D0D00AA6C34 /* Assets.xcassets */,
+				517EECBD1C418D0D00AA6C34 /* LaunchScreen.storyboard */,
+				517EECC01C418D0D00AA6C34 /* Info.plist */,
+				517EECB81C418D0D00AA6C34 /* ChemJokes.xcdatamodeld */,
+			);
+			path = ChemJokes;
+			sourceTree = "<group>";
+		};
+		517EECC81C418D0D00AA6C34 /* ChemJokesTests */ = {
+			isa = PBXGroup;
+			children = (
+				517EECC91C418D0D00AA6C34 /* ChemJokesTests.swift */,
+				517EECCB1C418D0D00AA6C34 /* Info.plist */,
+			);
+			path = ChemJokesTests;
+			sourceTree = "<group>";
+		};
+		517EECD31C418D0D00AA6C34 /* ChemJokesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				517EECD41C418D0D00AA6C34 /* ChemJokesUITests.swift */,
+				517EECD61C418D0D00AA6C34 /* Info.plist */,
+			);
+			path = ChemJokesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		517EECAD1C418D0D00AA6C34 /* ChemJokes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517EECD91C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokes" */;
+			buildPhases = (
+				517EECAA1C418D0D00AA6C34 /* Sources */,
+				517EECAB1C418D0D00AA6C34 /* Frameworks */,
+				517EECAC1C418D0D00AA6C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChemJokes;
+			productName = ChemJokes;
+			productReference = 517EECAE1C418D0D00AA6C34 /* ChemJokes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		517EECC41C418D0D00AA6C34 /* ChemJokesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517EECDC1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesTests" */;
+			buildPhases = (
+				517EECC11C418D0D00AA6C34 /* Sources */,
+				517EECC21C418D0D00AA6C34 /* Frameworks */,
+				517EECC31C418D0D00AA6C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517EECC71C418D0D00AA6C34 /* PBXTargetDependency */,
+			);
+			name = ChemJokesTests;
+			productName = ChemJokesTests;
+			productReference = 517EECC51C418D0D00AA6C34 /* ChemJokesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		517EECCF1C418D0D00AA6C34 /* ChemJokesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517EECDF1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesUITests" */;
+			buildPhases = (
+				517EECCC1C418D0D00AA6C34 /* Sources */,
+				517EECCD1C418D0D00AA6C34 /* Frameworks */,
+				517EECCE1C418D0D00AA6C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517EECD21C418D0D00AA6C34 /* PBXTargetDependency */,
+			);
+			name = ChemJokesUITests;
+			productName = ChemJokesUITests;
+			productReference = 517EECD01C418D0D00AA6C34 /* ChemJokesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		517EECA61C418D0D00AA6C34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Andrew Burns";
+				TargetAttributes = {
+					517EECAD1C418D0D00AA6C34 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9RJ722B5F2;
+					};
+					517EECC41C418D0D00AA6C34 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9RJ722B5F2;
+						TestTargetID = 517EECAD1C418D0D00AA6C34;
+					};
+					517EECCF1C418D0D00AA6C34 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9RJ722B5F2;
+						TestTargetID = 517EECAD1C418D0D00AA6C34;
+					};
+				};
+			};
+			buildConfigurationList = 517EECA91C418D0D00AA6C34 /* Build configuration list for PBXProject "ChemJokes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 517EECA51C418D0D00AA6C34;
+			productRefGroup = 517EECAF1C418D0D00AA6C34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				517EECAD1C418D0D00AA6C34 /* ChemJokes */,
+				517EECC41C418D0D00AA6C34 /* ChemJokesTests */,
+				517EECCF1C418D0D00AA6C34 /* ChemJokesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		517EECAC1C418D0D00AA6C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517EECBF1C418D0D00AA6C34 /* LaunchScreen.storyboard in Resources */,
+				517EECBC1C418D0D00AA6C34 /* Assets.xcassets in Resources */,
+				517EECB71C418D0D00AA6C34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECC31C418D0D00AA6C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECCE1C418D0D00AA6C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		517EECAA1C418D0D00AA6C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517EECB41C418D0D00AA6C34 /* ViewController.swift in Sources */,
+				517EECB21C418D0D00AA6C34 /* AppDelegate.swift in Sources */,
+				517EECBA1C418D0D00AA6C34 /* ChemJokes.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECC11C418D0D00AA6C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517EECCA1C418D0D00AA6C34 /* ChemJokesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517EECCC1C418D0D00AA6C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517EECD51C418D0D00AA6C34 /* ChemJokesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		517EECC71C418D0D00AA6C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 517EECAD1C418D0D00AA6C34 /* ChemJokes */;
+			targetProxy = 517EECC61C418D0D00AA6C34 /* PBXContainerItemProxy */;
+		};
+		517EECD21C418D0D00AA6C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 517EECAD1C418D0D00AA6C34 /* ChemJokes */;
+			targetProxy = 517EECD11C418D0D00AA6C34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		517EECB51C418D0D00AA6C34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517EECB61C418D0D00AA6C34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		517EECBD1C418D0D00AA6C34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517EECBE1C418D0D00AA6C34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		517EECD71C418D0D00AA6C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		517EECD81C418D0D00AA6C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		517EECDA1C418D0D00AA6C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChemJokes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		517EECDB1C418D0D00AA6C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChemJokes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		517EECDD1C418D0D00AA6C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChemJokesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemJokes.app/ChemJokes";
+			};
+			name = Debug;
+		};
+		517EECDE1C418D0D00AA6C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChemJokesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemJokes.app/ChemJokes";
+			};
+			name = Release;
+		};
+		517EECE01C418D0D00AA6C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChemJokesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChemJokes;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		517EECE11C418D0D00AA6C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChemJokesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andrewburns.ChemJokesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChemJokes;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		517EECA91C418D0D00AA6C34 /* Build configuration list for PBXProject "ChemJokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517EECD71C418D0D00AA6C34 /* Debug */,
+				517EECD81C418D0D00AA6C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517EECD91C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517EECDA1C418D0D00AA6C34 /* Debug */,
+				517EECDB1C418D0D00AA6C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		517EECDC1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517EECDD1C418D0D00AA6C34 /* Debug */,
+				517EECDE1C418D0D00AA6C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		517EECDF1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517EECE01C418D0D00AA6C34 /* Debug */,
+				517EECE11C418D0D00AA6C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		517EECB81C418D0D00AA6C34 /* ChemJokes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				517EECB91C418D0D00AA6C34 /* ChemJokes.xcdatamodel */,
+			);
+			currentVersion = 517EECB91C418D0D00AA6C34 /* ChemJokes.xcdatamodel */;
+			path = ChemJokes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 517EECA61C418D0D00AA6C34 /* Project object */;
+}
