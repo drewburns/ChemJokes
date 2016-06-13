@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,9 +18,85 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        getData()
+//
+        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        
         return true
     }
+    
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        print("Complete");
+        completionHandler(UIBackgroundFetchResult.NewData)
+        
+        getData();
+        
+    }
 
+    func getData() -> Void{
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedObjectContext = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest()
+        
+        // Create Entity Description
+        let entityDescription = NSEntityDescription.entityForName("Joke", inManagedObjectContext: managedObjectContext)
+        
+        // Configure Fetch Request
+        fetchRequest.entity = entityDescription
+        
+        do {
+            let result = try managedObjectContext.executeFetchRequest(fetchRequest)
+            
+            if result.count == 0 || NSDate().timeIntervalSinceDate((result.last?.date)!) >= 84600  {
+                let data = NSData(contentsOfURL: NSURL(string: "http://chemistryjokeapi.herokuapp.com/")!)
+                do {
+                    let json: NSDictionary =  try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary   
+                    let joke = json["text"]
+                    print(joke)
+                    
+                    var localNotification:UILocalNotification = UILocalNotification()
+                    localNotification.alertAction = "See your new Chemistry Joke"
+                    localNotification.alertBody = "Your joke is ready!"
+                    localNotification.fireDate = NSDate(timeIntervalSinceNow: 84600)
+                     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                    
+                    
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    let managedObjectContext = appDelegate.managedObjectContext
+                    let newitem = NSEntityDescription.insertNewObjectForEntityForName("Joke", inManagedObjectContext: managedObjectContext) as! Joke
+                    newitem.date = NSDate()
+                    newitem.text = joke! as? String
+
+                    do {
+                        try managedObjectContext.save()
+                    } catch {
+                        fatalError("Failure to save context: \(error)")
+                    }
+                    
+                } catch {}
+            }
+        } catch {
+            let fetchError = error as NSError
+            print(fetchError)
+        }
+
+    }
+
+    
+
+    
+//    func parseJSON(inputData: NSData) -> NSDictionary{
+//        var error: NSError?
+//        do {
+//            let boardsDictionary: NSDictionary =  try NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+//            return boardsDictionary
+//        } catch {}
+//    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

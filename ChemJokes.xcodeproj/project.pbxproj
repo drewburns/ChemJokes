@@ -15,6 +15,8 @@
 		517EECBF1C418D0D00AA6C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517EECBD1C418D0D00AA6C34 /* LaunchScreen.storyboard */; };
 		517EECCA1C418D0D00AA6C34 /* ChemJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECC91C418D0D00AA6C34 /* ChemJokesTests.swift */; };
 		517EECD51C418D0D00AA6C34 /* ChemJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECD41C418D0D00AA6C34 /* ChemJokesUITests.swift */; };
+		517EECE41C41A05700AA6C34 /* Joke+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECE21C41A05700AA6C34 /* Joke+CoreDataProperties.swift */; };
+		517EECE51C41A05700AA6C34 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517EECE31C41A05700AA6C34 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		517EECD01C418D0D00AA6C34 /* ChemJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		517EECD41C418D0D00AA6C34 /* ChemJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemJokesUITests.swift; sourceTree = "<group>"; };
 		517EECD61C418D0D00AA6C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517EECE21C41A05700AA6C34 /* Joke+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Joke+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		517EECE31C41A05700AA6C34 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		517EECB01C418D0D00AA6C34 /* ChemJokes */ = {
 			isa = PBXGroup;
 			children = (
+				517EECE21C41A05700AA6C34 /* Joke+CoreDataProperties.swift */,
+				517EECE31C41A05700AA6C34 /* Joke.swift */,
 				517EECB11C418D0D00AA6C34 /* AppDelegate.swift */,
 				517EECB31C418D0D00AA6C34 /* ViewController.swift */,
 				517EECB51C418D0D00AA6C34 /* Main.storyboard */,
@@ -197,6 +203,11 @@
 					517EECAD1C418D0D00AA6C34 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 9RJ722B5F2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					517EECC41C418D0D00AA6C34 = {
 						CreatedOnToolsVersion = 7.1;
@@ -262,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517EECE41C41A05700AA6C34 /* Joke+CoreDataProperties.swift in Sources */,
+				517EECE51C41A05700AA6C34 /* Joke.swift in Sources */,
 				517EECB41C418D0D00AA6C34 /* ViewController.swift in Sources */,
 				517EECB21C418D0D00AA6C34 /* AppDelegate.swift in Sources */,
 				517EECBA1C418D0D00AA6C34 /* ChemJokes.xcdatamodeld in Sources */,
@@ -491,6 +504,7 @@
 				517EECDB1C418D0D00AA6C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		517EECDC1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				517EECDE1C418D0D00AA6C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		517EECDF1C418D0D00AA6C34 /* Build configuration list for PBXNativeTarget "ChemJokesUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +522,7 @@
 				517EECE11C418D0D00AA6C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
